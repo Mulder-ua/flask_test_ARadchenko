@@ -20,7 +20,11 @@ class LoginForm(MainForms):
 
 
 class EditForm(MainForms):
-    authors = SelectField("Choose", choices=[(None, "Choose...")])
+    authors = SelectField("Choose...", choices=[(None, "Choose...")])
+    del_author    = SelectField("Choose...", choices=[(None, "Choose...")])
+    del_book      = SelectField("Choose...", choices=[(None, "Choose...")])
+    add_author    = StringField('add_author')
+    add_book      = StringField('add_book')
 
 
 
@@ -47,10 +51,12 @@ def get_info(search_request, sel):
 @app.route('/', methods = ['GET', 'POST'])
 @app.route('/index', methods = ['GET', 'POST'])
 def index():
+    title = "Home"
     form = MainForms()
     if request.method == 'POST' and request.form["btn"] == "Search":
         return redirect('/search')
     return render_template("index.html",
+                           title = title,
                            form = form
                            )
 
@@ -64,6 +70,7 @@ def before_request():
 
 @app.route('/login', methods = ['GET', 'POST'])
 def login():
+    title = "Login"
     if g.user is not None:
       return redirect('/search')
     user_l = {"login":"Admin",
@@ -85,6 +92,7 @@ def login():
         return redirect('/search')
 
     return render_template("login.html",
+                           title = title,
                            form = form,
                            error = error
                            )
@@ -92,6 +100,7 @@ def login():
 
 @app.route('/search', methods = ['GET', 'POST'])
 def search():
+    title = "Search result"
     form = MainForms()
 
     search_string = request.form['search']
@@ -115,6 +124,7 @@ def search():
             s.append([l["b_name"], l["a_name"]])
         result = s
     return render_template("search.html",
+                           title = title,
                            form = form,
                            result = result,
                            btn = request.form["btn"],
@@ -131,14 +141,26 @@ def logout():
 
 @app.route('/edit', methods = ['GET', 'POST'])
 def edit():
+    title = "Edit you library"
     error = None
+    authors = []
+    books   = []
     if g.user is None:
         flash("You have to authorized.")
         return redirect('/login')
     form = EditForm()
-    search_request = "a.name like '%" + "%' order by a_name "
-    q = get_info(search_request)
-    form.authors.choices += [(s["author_id"], s["a_name"]) for s in q]
+
+    search_request = "a.name like '%" + "%' order by a.name "
+    q = get_info(search_request, " distinct a.author_id, a.name a_name ")
+    authors += [(s["author_id"], s["a_name"]) for s in q]
+    form.authors.choices    = authors
+    form.del_author.choices = authors
+
+    search_request = "b.name like '%" + "%' order by b.name "
+    q = get_info(search_request, " b.book_id, b.name b_name ")
+    books += [(s["book_id"], s["b_name"]) for s in q]
+    form.del_book.choices = books
     return render_template("edit.html",
+                           title = title,
                            form = form,
                            error = error)
