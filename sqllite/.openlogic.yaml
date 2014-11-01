@@ -1,0 +1,20 @@
+---
+package_id: sqlite
+package_version: 3.7.16
+distribution_raw_file: 3.7.16/sqlite-shell-win32-x86-3071600.zip
+distribution_type: bin
+distribution_flavor: Shell
+platform_id: windows
+platform_vendor: all
+platform_version: all
+platform_arch: all
+name: SQLite 3.7.16 Shell Windows Binary
+description: SQLite 3.7.16 Shell Windows Binary
+distribution_notes: ''
+notify: 'yes'
+distribution_version: 1
+distribution_file_uuid_string: openlogic-sqlite-3.7.16-windows-bin-Shell-1
+release_date: '2013-03-19'
+distribution_file_uuid: !binary |-
+  NWIxOTUzYWQ4Njg0MGViN2E0YjRiMzlmYzg2YWU2YTdiNDMwNTZiMjQyZTll
+  NzcyYjA1MjU0MWZjNzIyOGJjMQ==

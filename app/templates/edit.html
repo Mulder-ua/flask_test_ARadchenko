@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+        {{ error }}
+        <h1>Добавить книгу/автора:</h1>
+
+
+
+            <table>
+                <tr>
+                    <TD>Добавить автора:</TD><TD>{{form.search(size = 38)}}</TD><TD></TD>
+                </tr>
+                <tr>
+                   <TD> </TD><td><input id = "btn2" type="submit"  name = 'btn' value="Add_author"></td>
+                </tr>
+                <tr>
+                    <TD>Добавить книгу:</TD><TD>{{form.search(size = 38)}}</TD><TD></TD>
+                </tr>
+                <tr>
+                    <TD> Выбрать автора:</TD><TD>{{form.authors}}</TD><TD></TD>
+                </tr>
+                 <tr>
+                   <TD> </TD><td><input id = "btn2" type="submit"  name = 'btn' value="Add_book"></td>
+                </tr>
+            </table>
+            <h1>Удалить книгу/автора:</h1>
+
+{% endblock %}
