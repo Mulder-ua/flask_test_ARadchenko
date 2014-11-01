@@ -1,62 +1,60 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+	<head>		
+		<title>Some title!</title>
+		<link type="text/css" rel="stylesheet" href="../static/style.css"
+	</head>
+	<body>
+		<div class="top_bar">
+			<nav>
+					<span>
+						<div>
+			        <a href="/">Home </a>
 
-<head lang="en">
-    <script type="text/javascript" src="../static/jquery-1.11.1.js"></script>
-    <link type="text/css" rel="stylesheet" href="../static/style.css" />
-    <title>{{ title }}</title>
-</head>
+			        <a href="/edit">Edit library</a>
 
-<body>
-    <div class="topbar">
-        <br>
-        <a href="/">Home</a>
-        <a>|</a>
-        <a href="/edit">Edit library</a>
-        <a>|</a>
-        {% if g.user == None %}
+			        {% if g.user == None %}
 
-        <a href="/login">Sign in</a>
-         {% else %}
-        <a href="/logout">Logout</a>
-        <br>
-        <i>Hello, {{g.user['login']}}!</i>
-        {% endif %}
-        </div>
-    </div>
+			        <a href="/login">Sign in</a> 
 
-    <div class="logo">
-        <img id="logo" src="../static/logo.png" height="200">
-    </div>
+			       {% else %}
 
-    <div class="content">
-<br>
-        <form method="POST" action="/search" id="search">
-            Search: {{form.search(size = 70)}}
-            <br>
-            <input id = "btn" type="submit"  name = 'btn' value="Authors">
-            <input id = "btn" type="submit"  name = 'btn' value="Books">
+			        <a href="/logout">{{g.user['login']}} [Logout]</a> 
 
-         </form>
+			        
 
+			        {% endif %} 
+			    </div>
+			    	</span>
+			</nav>
+		</div>
+		
+		<div class="logo">
+	        <img id="logo" src="../static/logo.png" height="200" alt="PyLibrary_logo">
+	    </div>
+		
+		<main>
+			<form method="POST" action="/search">
+				Search: {{form.search(size = 70)}}
+				
+				<br>
+				<input type="submit"  name = 'btn' value="Authors">
+				<input type="submit"  name = 'btn' value="Books">
 
+	        </form>
+	        <hr>
+			{% with messages = get_flashed_messages() %}
+		    {% if messages %}
+		    <ul>
 
+		    {% for message in messages %}
 
+		    <font color=#E05475>{{ message }}</font>
+		    {% endfor %}
+		    </ul>
 
-
-<hr>
-{% with messages = get_flashed_messages() %}
-    {% if messages %}
-    <ul>
-
-    {% for message in messages %}
-
-    <font color=#E05475>{{ message }}</font>
-    {% endfor %}
-    </ul>
-
-    {% endif %}
-    {% endwith %}
+		    {% endif %}
+		    {% endwith %}
 
 
 
@@ -64,10 +62,10 @@
 
 {% block content %}{% endblock %}
 
-
-
-</div>
-
-</body>
+		</main>
+		<footer>
+	    <h5>PyLibrary for prom.ua by Radchenko Alexandr</h5>
+		</footer>
+	</body>
 
 </html>

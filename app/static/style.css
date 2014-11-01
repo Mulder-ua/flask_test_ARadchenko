@@ -1,48 +1,58 @@
-.topbar {
-    width: 100%;
-    background: none repeat scroll #094D58;
-    height: 64px;
+html {
+	background: #8EA37A;
 }
 
-.topbar div, body{
-	margin:0; /* Отступы вверху */
-
-}
-
-body{
-    background-color: #8EA37A; /* Цвет фона веб-страницы */
-    color: #8EA37A; /* Цвет текста в рамках body */
-   }
-
-.topbar a{
-    color: #8EA37A;
-    font-size: 15px;
-    text-transform: uppercase;
-    margin-left: 10px;
-    font: 600 16px/24px proxima-nova,sans-serif;
-    text-decoration: none;
-}
-
-.logo{
-    text-align: center;
+body {
+	margin: 0;
+	padding: 0;
+	min-height:500px;
 }
 
 
 
+.top_bar a, span {	
+	color: #8EA37A;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-left: 10px;
+	font: 600 16px/24px proxima-nova,sans-serif;	
+}
 
-.content{
+.top_bar p {
+	font-size: 8 px;
+}
 
- min-height:500px; /* Высота фигуры */
- background:#094D58; /* фон блока */
- border: 2px #007794 solid; /* стили рамки */
- border-radius: 10px; /* закругление углов для всех, кто понимает */
- padding: 5px; /* внутренние отступы */
+.logo {
+	padding-top: 5;
+	text-align: center;
+	background: #8EA37A;
+}
 
+nav {
+
+	height: 72px;	
+}
+
+main, footer, nav, .logo{
+	margin: auto;
+	min-width: 855px;
+	max-width: 855px;
 }
 
 
+main, nav, footer {
+	border-radius: 10px;
+	padding: 10px; /* внутренние отступы */
+	border: 2px #007794 solid; /* стили рамки */
+	color: #8EA37A;
+	background: #094D58;
+}
 
-#btn{
+main {
+	min-height:500px;
+}
+
+input[type = "submit"] {
     margin-top: 10px;
     margin-left: 120px;
     width:100px;
@@ -53,16 +63,23 @@ body{
     border-color: #00b2d0;
 }
 
-#btn2{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    width:90px;
-    height:25px;
-    background: #094d58;
-    color: #8EA37A;
+
+select, input[type = "text"], input[type="password"] {
+    background: #8EA37A;
+    color: #094d58;
     border-radius: 6px;
     border-color: #00b2d0;
 }
 
+.search h4, div {
+	font: cursive;
+	color: #007794;
+	margin-top: 0
+}
 
+
+
+footer {
+	margin-top: 10;
+	text-align: center;
+}

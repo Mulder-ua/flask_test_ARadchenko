@@ -2,22 +2,22 @@
 {% block content %}
 
 Result for "{{ request }}":
-        <br>
-        <br>
+<br>
+<br>
+
 {% with result = result %}
     {% if result %}
-    {% for result in result %}
-        {% if btn == "Books" %}
-            {{ result[0] }}
-        <div><font color=#007794> <i>by {{ result[1] }} </i> </font></div>
-
-        {% else %}
-            {{ result }}
-        {% endif %}
-         <br>
-    {% endfor %}
+        {% for result in result %}
+            {% if btn == "Books" %}
+                 {{ result[0] }} 
+                <div class="search"> <h4>by {{ result[1] }} </h4> </div>
+            {% else %}
+               {{ result }}  <br>
+            {% endif %}
+           
+        {% endfor %}
     {% endif %}
-    {% endwith %}
+{% endwith %}
 
 
 {% endblock %}
