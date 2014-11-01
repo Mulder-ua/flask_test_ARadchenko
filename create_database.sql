@@ -35,211 +35,212 @@ create table tmp_authors_books(
 		);
 		
 insert into tmp_authors_books(book, author)
-values('The Lord of the Rings', 'J. R. R. Tolkien')
-,('Pride and Prejudice', 'Jane Austen')
-,('His Dark Materials', 'Philip Pullman')
-,('The Hitchhiker''s Guide to the Galaxy', 'Douglas Adams')
-,('Harry Potter and the Goblet of Fire', 'J. K. Rowling')
-,('To Kill a Mockingbird', 'Harper Lee')
-,('Winnie-the-Pooh', 'A. A. Milne')
-,('Nineteen Eighty-Four', 'George Orwell')
-,('The Lion, the Witch and the Wardrobe', 'C. S. Lewis')
-,('Jane Eyre', 'Charlotte Brontë')
-,('Catch-22', 'Joseph Heller')
-,('Wuthering Heights', 'Emily Brontë')
-,('Birdsong', 'Sebastian Faulks')
-,('Rebecca', 'Daphne du Maurier')
-,('The Catcher in the Rye', 'J. D. Salinger')
-,('The Wind in the Willows', 'Kenneth Grahame')
-,('Great Expectations', 'Charles Dickens')
-,('Little Women', 'Louisa May Alcott')
-,('Captain Corelli''s Mandolin', 'Louis de Bernières')
-,('War and Peace', 'Leo Tolstoy')
-,('Gone with the Wind', 'Margaret Mitchell')
-,('Harry Potter and the Philosopher''s Stone', 'J. K. Rowling')
-,('Harry Potter and the Chamber of Secrets', 'J. K. Rowling')
-,('Harry Potter and the Prisoner of Azkaban', 'J. K. Rowling')
-,('The Hobbit', 'J. R. R. Tolkien')
-,('Tess of the d''Urbervilles', 'Thomas Hardy')
-,('Middlemarch', 'George Eliot')
-,('A Prayer for Owen Meany', 'John Irving')
-,('The Grapes of Wrath', 'John Steinbeck')
-,('Alice''s Adventures in Wonderland', 'Lewis Carroll')
-,('The Story of Tracy Beaker', 'Jacqueline Wilson')
-,('One Hundred Years of Solitude', 'Gabriel García Márquez')
-,('The Pillars of the Earth', 'Ken Follett')
-,('David Copperfield', 'Charles Dickens')
-,('Charlie and the Chocolate Factory', 'Roald Dahl')
-,('Treasure Island', 'Robert Louis Stevenson')
-,('A Town Like Alice', 'Nevil Shute')
-,('Persuasion', 'Jane Austen')
-,('Dune', 'Frank Herbert')
-,('Emma', 'Jane Austen')
-,('Anne of Green Gables', 'Lucy Maud Montgomery')
-,('Watership Down', 'Richard Adams')
-,('The Great Gatsby', 'F. Scott Fitzgerald')
-,('The Count of Monte Cristo', 'Alexandre Dumas')
-,('Brideshead Revisited', 'Evelyn Waugh')
-,('Animal Farm', 'George Orwell')
-,('A Christmas Carol', 'Charles Dickens')
-,('Far from the Madding Crowd', 'Thomas Hardy')
-,('Goodnight Mister Tom', 'Michelle Magorian')
-,('The Shell Seekers', 'Rosamunde Pilcher')
-,('The Secret Garden', 'Frances Hodgson Burnett')
-,('Of Mice and Men', 'John Steinbeck')
-,('The Stand', 'Stephen King')
-,('Anna Karenina', 'Leo Tolstoy')
-,('A Suitable Boy', 'Vikram Seth')
-,('The BFG', 'Roald Dahl')
-,('Swallows and Amazons', 'Arthur Ransome')
-,('Black Beauty', 'Anna Sewell')
-,('Artemis Fowl', 'Eoin Colfer')
-,('Crime and Punishment', 'Fyodor Dostoevsky')
-,('Noughts & Crosses', 'Malorie Blackman')
-,('Memoirs of a Geisha', 'Arthur Golden')
-,('A Tale of Two Cities', 'Charles Dickens')
-,('The Thorn Birds', 'Colleen McCullough')
-,('Mort', 'Terry Pratchett')
-,('The Magic Faraway Tree', 'Enid Blyton')
-,('The Magus', 'John Fowles')
-,('Good Omens', 'Neil Gaiman and Terry Pratchett')
-,('Guards! Guards!', 'Terry Pratchett')
-,('Lord of the Flies', 'William Golding')
-,('Perfume', 'Patrick Süskind')
-,('The Ragged-Trousered Philanthropists', 'Robert Tressell')
-,('Night Watch', 'Terry Pratchett')
-,('Matilda', 'Roald Dahl')
-,('Bridget Jones''s Diary', 'Helen Fielding')
-,('The Secret History', 'Donna Tartt')
-,('The Woman in White', 'Wilkie Collins')
-,('Ulysses', 'James Joyce')
-,('Bleak House', 'Charles Dickens')
-,('Double Act', 'Jacqueline Wilson')
-,('The Twits', 'Roald Dahl')
-,('I Capture the Castle', 'Dodie Smith')
-,('Holes', 'Louis Sachar')
-,('Gormenghast', 'Mervyn Peake')
-,('The God of Small Things', 'Arundhati Roy')
-,('Vicky Angel', 'Jacqueline Wilson')
-,('Brave New World', 'Aldous Huxley')
-,('Cold Comfort Farm', 'Stella Gibbons')
-,('Magician', 'Raymond E. Feist')
-,('On the Road', 'Jack Kerouac')
-,('The Godfather', 'Mario Puzo')
-,('The Clan of the Cave Bear', 'Jean M. Auel')
-,('The Colour of Magic', 'Terry Pratchett')
-,('The Alchemist', 'Paulo Coelho')
-,('Katherine', 'Anya Seton')
-,('Kane and Abel', 'Jeffrey Archer')
-,('Love in the Time of Cholera', 'Gabriel García Márquez')
-,('Girls in Love', 'Jacqueline Wilson')
-,('The Princess Diaries', 'Meg Cabot')
-,('Midnight''s Children', 'Salman Rushdie')
-,('Three Men in a Boat', 'Jerome K. Jerome')
-,('Small Gods', 'Terry Pratchett')
-,('The Beach', 'Alex Garland')
-,('Dracula', 'Bram Stoker')
-,('Point Blanc', 'Anthony Horowitz')
-,('The Pickwick Papers', 'Charles Dickens')
-,('Stormbreaker', 'Anthony Horowitz')
-,('The Wasp Factory', 'Iain Banks')
-,('The Day of the Jackal', 'Frederick Forsyth')
-,('The Illustrated Mum', 'Jacqueline Wilson')
-,('Jude the Obscure', 'Thomas Hardy')
-,('The Secret Diary of Adrian Mole, Aged 13¾', 'Sue Townsend')
-,('The Cruel Sea', 'Nicholas Monsarrat')
-,('Les Misérables', 'Victor Hugo')
-,('The Mayor of Casterbridge', 'Thomas Hardy')
-,('The Dare Game', 'Jacqueline Wilson')
-,('Bad Girls', 'Jacqueline Wilson')
-,('The Picture of Dorian Gray', 'Oscar Wilde')
-,('Shōgun', 'James Clavell')
-,('The Day of the Triffids', 'John Wyndham')
-,('Lola Rose', 'Jacqueline Wilson')
-,('Vanity Fair', 'William Makepeace Thackeray')
-,('The Forsyte Saga', 'John Galsworthy')
-,('House of Leaves', 'Mark Z. Danielewski')
-,('The Poisonwood Bible', 'Barbara Kingsolver')
-,('Reaper Man', 'Terry Pratchett')
-,('Angus, Thongs and Full-Frontal Snogging', 'Louise Rennison')
-,('The Hound of the Baskervilles', 'Arthur Conan Doyle')
-,('Possession: A Romance', 'A. S. Byatt')
-,('The Master and Margarita', 'Mikhail Bulgakov')
-,('The Handmaid''s Tale', 'Margaret Atwood')
-,('Danny, the Champion of the World', 'Roald Dahl')
-,('East of Eden', 'John Steinbeck')
-,('George''s Marvellous Medicine', 'Roald Dahl')
-,('Wyrd Sisters', 'Terry Pratchett')
-,('The Color Purple', 'Alice Walker')
-,('Hogfather', 'Terry Pratchett')
-,('The Thirty-nine Steps', 'John Buchan')
-,('Girls in Tears', 'Jacqueline Wilson')
-,('Sleepovers', 'Jacqueline Wilson')
-,('All Quiet on the Western Front', 'Erich Maria Remarque')
-,('Behind the Scenes at the Museum', 'Kate Atkinson')
-,('High Fidelity', 'Nick Hornby')
-,('It', 'Stephen King')
-,('James and the Giant Peach', 'Roald Dahl')
-,('The Green Mile', 'Stephen King')
-,('Papillon', 'Henri Charrière')
-,('Men at Arms', 'Terry Pratchett')
-,('Master and Commander', 'Patrick O''Brian')
-,('Skeleton Key', 'Anthony Horowitz')
-,('Soul Music', 'Terry Pratchett')
-,('Thief of Time', 'Terry Pratchett')
-,('The Fifth Elephant', 'Terry Pratchett')
-,('Atonement', 'Ian McEwan')
-,('Secrets', 'Jacqueline Wilson')
-,('The Silver Sword', 'Ian Serraillier')
-,('One Flew Over the Cuckoo''s Nest', 'Ken Kesey')
-,('Heart of Darkness', 'Joseph Conrad')
-,('Kim', 'Rudyard Kipling')
-,('Cross Stitch', 'Diana Gabaldon')
-,('Moby-Dick', 'Herman Melville')
-,('River God', 'Wilbur Smith')
-,('Sunset Song', 'Lewis Grassic Gibbon')
-,('The Shipping News', 'E. Annie Proulx')
-,('The World According to Garp', 'John Irving')
-,('Lorna Doone', 'R. D. Blackmore')
-,('Girls Out Late', 'Jacqueline Wilson')
-,('The Far Pavilions', 'M. M. Kaye')
-,('The Witches', 'Roald Dahl')
-,('Charlotte''s Web', 'E. B. White')
-,('Frankenstein', 'Mary Shelley')
-,('They Used to Play on Grass', 'Terry Venables and Gordon Williams')
-,('The Old Man and the Sea', 'Ernest Hemingway')
-,('The Name of the Rose', 'Umberto Eco')
-,('Sophie''s World', 'Jostein Gaarder')
-,('Dustbin Baby', 'Jacqueline Wilson')
-,('Fantastic Mr. Fox', 'Roald Dahl')
-,('Lolita', 'Vladimir Nabokov')
-,('Jonathan Livingston Seagull', 'Richard Bach')
-,('The Little Prince', 'Antoine de Saint-Exupéry')
-,('The Suitcase Kid', 'Jacqueline Wilson')
-,('Oliver Twist', 'Charles Dickens')
-,('The Power of One', 'Bryce Courtenay')
-,('Silas Marner', 'George Eliot')
-,('American Psycho', 'Bret Easton Ellis')
-,('Diary of a Nobody', 'George and Weedon Grossmith')
-,('Trainspotting', 'Irvine Welsh')
-,('Goosebumps', 'R. L. Stine')
-,('Heidi', 'Johanna Spyri')
-,('Sons and Lovers', 'D. H. Lawrence')
-,('The Unbearable Lightness of Being', 'Milan Kundera')
-,('Man and Boy', 'Tony Parsons')
-,('The Truth', 'Terry Pratchett')
-,('The War of the Worlds', 'H. G. Wells')
-,('The Horse Whisperer', 'Nicholas Evans')
-,('A Fine Balance', 'Rohinton Mistry')
-,('Witches Abroad', 'Terry Pratchett')
-,('The Once and Future King', 'T. H. White')
-,('The Very Hungry Caterpillar', 'Eric Carle')
-,('Flowers in the Attic', 'V. C. Andrews');
+values('The Lord of the Rings', 'J. R. R. Tolkien');
+
+insert into tmp_authors_books(book, author) values('Pride and Prejudice', 'Jane Austen');;
+insert into tmp_authors_books(book, author) values ('His Dark Materials', 'Philip Pullman');
+insert into tmp_authors_books(book, author) values ('The Hitchhiker''s Guide to the Galaxy', 'Douglas Adams');
+insert into tmp_authors_books(book, author) values ('Harry Potter and the Goblet of Fire', 'J. K. Rowling');
+insert into tmp_authors_books(book, author) values ('To Kill a Mockingbird', 'Harper Lee');
+insert into tmp_authors_books(book, author) values ('Winnie-the-Pooh', 'A. A. Milne');
+insert into tmp_authors_books(book, author) values ('Nineteen Eighty-Four', 'George Orwell');
+insert into tmp_authors_books(book, author) values ('The Lion, the Witch and the Wardrobe', 'C. S. Lewis');
+insert into tmp_authors_books(book, author) values ('Jane Eyre', 'Charlotte Brontë');
+insert into tmp_authors_books(book, author) values ('Catch-22', 'Joseph Heller');
+insert into tmp_authors_books(book, author) values ('Wuthering Heights', 'Emily Brontë');
+insert into tmp_authors_books(book, author) values ('Birdsong', 'Sebastian Faulks');
+insert into tmp_authors_books(book, author) values ('Rebecca', 'Daphne du Maurier');
+insert into tmp_authors_books(book, author) values ('The Catcher in the Rye', 'J. D. Salinger');
+insert into tmp_authors_books(book, author) values ('The Wind in the Willows', 'Kenneth Grahame');
+insert into tmp_authors_books(book, author) values ('Great Expectations', 'Charles Dickens');
+insert into tmp_authors_books(book, author) values ('Little Women', 'Louisa May Alcott');
+insert into tmp_authors_books(book, author) values ('Captain Corelli''s Mandolin', 'Louis de Bernières');
+insert into tmp_authors_books(book, author) values ('War and Peace', 'Leo Tolstoy');
+insert into tmp_authors_books(book, author) values ('Gone with the Wind', 'Margaret Mitchell');
+insert into tmp_authors_books(book, author) values ('Harry Potter and the Philosopher''s Stone', 'J. K. Rowling');
+insert into tmp_authors_books(book, author) values ('Harry Potter and the Chamber of Secrets', 'J. K. Rowling');
+insert into tmp_authors_books(book, author) values ('Harry Potter and the Prisoner of Azkaban', 'J. K. Rowling');
+insert into tmp_authors_books(book, author) values ('The Hobbit', 'J. R. R. Tolkien');
+insert into tmp_authors_books(book, author) values ('Tess of the d''Urbervilles', 'Thomas Hardy');
+insert into tmp_authors_books(book, author) values ('Middlemarch', 'George Eliot');
+insert into tmp_authors_books(book, author) values ('A Prayer for Owen Meany', 'John Irving');
+insert into tmp_authors_books(book, author) values ('The Grapes of Wrath', 'John Steinbeck');
+insert into tmp_authors_books(book, author) values ('Alice''s Adventures in Wonderland', 'Lewis Carroll');
+insert into tmp_authors_books(book, author) values ('The Story of Tracy Beaker', 'Jacqueline Wilson');
+insert into tmp_authors_books(book, author) values ('One Hundred Years of Solitude', 'Gabriel García Márquez');
+insert into tmp_authors_books(book, author) values ('The Pillars of the Earth', 'Ken Follett');
+insert into tmp_authors_books(book, author) values ('David Copperfield', 'Charles Dickens');
+insert into tmp_authors_books(book, author) values ('Charlie and the Chocolate Factory', 'Roald Dahl');
+insert into tmp_authors_books(book, author) values ('Treasure Island', 'Robert Louis Stevenson');
+insert into tmp_authors_books(book, author) values ('A Town Like Alice', 'Nevil Shute');
+insert into tmp_authors_books(book, author) values ('Persuasion', 'Jane Austen');
+insert into tmp_authors_books(book, author) values ('Dune', 'Frank Herbert');
+insert into tmp_authors_books(book, author) values ('Emma', 'Jane Austen');
+insert into tmp_authors_books(book, author) values ('Anne of Green Gables', 'Lucy Maud Montgomery');
+insert into tmp_authors_books(book, author) values ('Watership Down', 'Richard Adams');
+insert into tmp_authors_books(book, author) values ('The Great Gatsby', 'F. Scott Fitzgerald');
+insert into tmp_authors_books(book, author) values ('The Count of Monte Cristo', 'Alexandre Dumas');
+insert into tmp_authors_books(book, author) values ('Brideshead Revisited', 'Evelyn Waugh');
+insert into tmp_authors_books(book, author) values ('Animal Farm', 'George Orwell');
+insert into tmp_authors_books(book, author) values ('A Christmas Carol', 'Charles Dickens');
+insert into tmp_authors_books(book, author) values ('Far from the Madding Crowd', 'Thomas Hardy');
+insert into tmp_authors_books(book, author) values ('Goodnight Mister Tom', 'Michelle Magorian');
+insert into tmp_authors_books(book, author) values ('The Shell Seekers', 'Rosamunde Pilcher');
+insert into tmp_authors_books(book, author) values ('The Secret Garden', 'Frances Hodgson Burnett');
+insert into tmp_authors_books(book, author) values ('Of Mice and Men', 'John Steinbeck');
+insert into tmp_authors_books(book, author) values ('The Stand', 'Stephen King');
+insert into tmp_authors_books(book, author) values ('Anna Karenina', 'Leo Tolstoy');
+insert into tmp_authors_books(book, author) values ('A Suitable Boy', 'Vikram Seth');
+insert into tmp_authors_books(book, author) values ('The BFG', 'Roald Dahl');
+insert into tmp_authors_books(book, author) values ('Swallows and Amazons', 'Arthur Ransome');
+insert into tmp_authors_books(book, author) values ('Black Beauty', 'Anna Sewell');
+insert into tmp_authors_books(book, author) values ('Artemis Fowl', 'Eoin Colfer');
+insert into tmp_authors_books(book, author) values ('Crime and Punishment', 'Fyodor Dostoevsky');
+insert into tmp_authors_books(book, author) values ('Noughts & Crosses', 'Malorie Blackman');
+insert into tmp_authors_books(book, author) values ('Memoirs of a Geisha', 'Arthur Golden');
+insert into tmp_authors_books(book, author) values ('A Tale of Two Cities', 'Charles Dickens');
+insert into tmp_authors_books(book, author) values ('The Thorn Birds', 'Colleen McCullough');
+insert into tmp_authors_books(book, author) values ('Mort', 'Terry Pratchett');
+insert into tmp_authors_books(book, author) values ('The Magic Faraway Tree', 'Enid Blyton');
+insert into tmp_authors_books(book, author) values ('The Magus', 'John Fowles');
+insert into tmp_authors_books(book, author) values ('Good Omens', 'Neil Gaiman and Terry Pratchett');
+insert into tmp_authors_books(book, author) values ('Guards! Guards!', 'Terry Pratchett');
+insert into tmp_authors_books(book, author) values ('Lord of the Flies', 'William Golding');
+insert into tmp_authors_books(book, author) values ('Perfume', 'Patrick Süskind');
+insert into tmp_authors_books(book, author) values ('The Ragged-Trousered Philanthropists', 'Robert Tressell');
+insert into tmp_authors_books(book, author) values ('Night Watch', 'Terry Pratchett');
+insert into tmp_authors_books(book, author) values ('Matilda', 'Roald Dahl');
+insert into tmp_authors_books(book, author) values ('Bridget Jones''s Diary', 'Helen Fielding');
+insert into tmp_authors_books(book, author) values ('The Secret History', 'Donna Tartt');
+insert into tmp_authors_books(book, author) values ('The Woman in White', 'Wilkie Collins');
+insert into tmp_authors_books(book, author) values ('Ulysses', 'James Joyce');
+insert into tmp_authors_books(book, author) values ('Bleak House', 'Charles Dickens');
+insert into tmp_authors_books(book, author) values ('Double Act', 'Jacqueline Wilson');
+insert into tmp_authors_books(book, author) values ('The Twits', 'Roald Dahl');
+insert into tmp_authors_books(book, author) values ('I Capture the Castle', 'Dodie Smith');
+insert into tmp_authors_books(book, author) values ('Holes', 'Louis Sachar');
+insert into tmp_authors_books(book, author) values ('Gormenghast', 'Mervyn Peake');
+insert into tmp_authors_books(book, author) values ('The God of Small Things', 'Arundhati Roy');
+insert into tmp_authors_books(book, author) values ('Vicky Angel', 'Jacqueline Wilson');
+insert into tmp_authors_books(book, author) values ('Brave New World', 'Aldous Huxley');
+insert into tmp_authors_books(book, author) values ('Cold Comfort Farm', 'Stella Gibbons');
+insert into tmp_authors_books(book, author) values ('Magician', 'Raymond E. Feist');
+insert into tmp_authors_books(book, author) values ('On the Road', 'Jack Kerouac');
+insert into tmp_authors_books(book, author) values ('The Godfather', 'Mario Puzo');
+insert into tmp_authors_books(book, author) values ('The Clan of the Cave Bear', 'Jean M. Auel');
+insert into tmp_authors_books(book, author) values ('The Colour of Magic', 'Terry Pratchett');
+insert into tmp_authors_books(book, author) values ('The Alchemist', 'Paulo Coelho');
+insert into tmp_authors_books(book, author) values ('Katherine', 'Anya Seton');
+insert into tmp_authors_books(book, author) values ('Kane and Abel', 'Jeffrey Archer');
+insert into tmp_authors_books(book, author) values ('Love in the Time of Cholera', 'Gabriel García Márquez');
+insert into tmp_authors_books(book, author) values ('Girls in Love', 'Jacqueline Wilson');
+insert into tmp_authors_books(book, author) values ('The Princess Diaries', 'Meg Cabot');
+insert into tmp_authors_books(book, author) values ('Midnight''s Children', 'Salman Rushdie');
+insert into tmp_authors_books(book, author) values ('Three Men in a Boat', 'Jerome K. Jerome');
+insert into tmp_authors_books(book, author) values ('Small Gods', 'Terry Pratchett');
+insert into tmp_authors_books(book, author) values ('The Beach', 'Alex Garland');
+insert into tmp_authors_books(book, author) values ('Dracula', 'Bram Stoker');
+insert into tmp_authors_books(book, author) values ('Point Blanc', 'Anthony Horowitz');
+insert into tmp_authors_books(book, author) values ('The Pickwick Papers', 'Charles Dickens');
+insert into tmp_authors_books(book, author) values ('Stormbreaker', 'Anthony Horowitz');
+insert into tmp_authors_books(book, author) values ('The Wasp Factory', 'Iain Banks');
+insert into tmp_authors_books(book, author) values ('The Day of the Jackal', 'Frederick Forsyth');
+insert into tmp_authors_books(book, author) values ('The Illustrated Mum', 'Jacqueline Wilson');
+insert into tmp_authors_books(book, author) values ('Jude the Obscure', 'Thomas Hardy');
+insert into tmp_authors_books(book, author) values ('The Secret Diary of Adrian Mole, Aged 13¾', 'Sue Townsend');
+insert into tmp_authors_books(book, author) values ('The Cruel Sea', 'Nicholas Monsarrat');
+insert into tmp_authors_books(book, author) values ('Les Misérables', 'Victor Hugo');
+insert into tmp_authors_books(book, author) values ('The Mayor of Casterbridge', 'Thomas Hardy');
+insert into tmp_authors_books(book, author) values ('The Dare Game', 'Jacqueline Wilson');
+insert into tmp_authors_books(book, author) values ('Bad Girls', 'Jacqueline Wilson');
+insert into tmp_authors_books(book, author) values ('The Picture of Dorian Gray', 'Oscar Wilde');
+insert into tmp_authors_books(book, author) values ('Shōgun', 'James Clavell');
+insert into tmp_authors_books(book, author) values ('The Day of the Triffids', 'John Wyndham');
+insert into tmp_authors_books(book, author) values ('Lola Rose', 'Jacqueline Wilson');
+insert into tmp_authors_books(book, author) values ('Vanity Fair', 'William Makepeace Thackeray');
+insert into tmp_authors_books(book, author) values ('The Forsyte Saga', 'John Galsworthy');
+insert into tmp_authors_books(book, author) values ('House of Leaves', 'Mark Z. Danielewski');
+insert into tmp_authors_books(book, author) values ('The Poisonwood Bible', 'Barbara Kingsolver');
+insert into tmp_authors_books(book, author) values ('Reaper Man', 'Terry Pratchett');
+insert into tmp_authors_books(book, author) values ('Angus, Thongs and Full-Frontal Snogging', 'Louise Rennison');
+insert into tmp_authors_books(book, author) values ('The Hound of the Baskervilles', 'Arthur Conan Doyle');
+insert into tmp_authors_books(book, author) values ('Possession: A Romance', 'A. S. Byatt');
+insert into tmp_authors_books(book, author) values ('The Master and Margarita', 'Mikhail Bulgakov');
+insert into tmp_authors_books(book, author) values ('The Handmaid''s Tale', 'Margaret Atwood');
+insert into tmp_authors_books(book, author) values ('Danny, the Champion of the World', 'Roald Dahl');
+insert into tmp_authors_books(book, author) values ('East of Eden', 'John Steinbeck');
+insert into tmp_authors_books(book, author) values ('George''s Marvellous Medicine', 'Roald Dahl');
+insert into tmp_authors_books(book, author) values ('Wyrd Sisters', 'Terry Pratchett');
+insert into tmp_authors_books(book, author) values ('The Color Purple', 'Alice Walker');
+insert into tmp_authors_books(book, author) values ('Hogfather', 'Terry Pratchett');
+insert into tmp_authors_books(book, author) values ('The Thirty-nine Steps', 'John Buchan');
+insert into tmp_authors_books(book, author) values ('Girls in Tears', 'Jacqueline Wilson');
+insert into tmp_authors_books(book, author) values ('Sleepovers', 'Jacqueline Wilson');
+insert into tmp_authors_books(book, author) values ('All Quiet on the Western Front', 'Erich Maria Remarque');
+insert into tmp_authors_books(book, author) values ('Behind the Scenes at the Museum', 'Kate Atkinson');
+insert into tmp_authors_books(book, author) values ('High Fidelity', 'Nick Hornby');
+insert into tmp_authors_books(book, author) values ('It', 'Stephen King');
+insert into tmp_authors_books(book, author) values ('James and the Giant Peach', 'Roald Dahl');
+insert into tmp_authors_books(book, author) values ('The Green Mile', 'Stephen King');
+insert into tmp_authors_books(book, author) values ('Papillon', 'Henri Charrière');
+insert into tmp_authors_books(book, author) values ('Men at Arms', 'Terry Pratchett');
+insert into tmp_authors_books(book, author) values ('Master and Commander', 'Patrick O''Brian');
+insert into tmp_authors_books(book, author) values ('Skeleton Key', 'Anthony Horowitz');
+insert into tmp_authors_books(book, author) values ('Soul Music', 'Terry Pratchett');
+insert into tmp_authors_books(book, author) values ('Thief of Time', 'Terry Pratchett');
+insert into tmp_authors_books(book, author) values ('The Fifth Elephant', 'Terry Pratchett');
+insert into tmp_authors_books(book, author) values ('Atonement', 'Ian McEwan');
+insert into tmp_authors_books(book, author) values ('Secrets', 'Jacqueline Wilson');
+insert into tmp_authors_books(book, author) values ('The Silver Sword', 'Ian Serraillier');
+insert into tmp_authors_books(book, author) values ('One Flew Over the Cuckoo''s Nest', 'Ken Kesey');
+insert into tmp_authors_books(book, author) values ('Heart of Darkness', 'Joseph Conrad');
+insert into tmp_authors_books(book, author) values ('Kim', 'Rudyard Kipling');
+insert into tmp_authors_books(book, author) values ('Cross Stitch', 'Diana Gabaldon');
+insert into tmp_authors_books(book, author) values ('Moby-Dick', 'Herman Melville');
+insert into tmp_authors_books(book, author) values ('River God', 'Wilbur Smith');
+insert into tmp_authors_books(book, author) values ('Sunset Song', 'Lewis Grassic Gibbon');
+insert into tmp_authors_books(book, author) values ('The Shipping News', 'E. Annie Proulx');
+insert into tmp_authors_books(book, author) values ('The World According to Garp', 'John Irving');
+insert into tmp_authors_books(book, author) values ('Lorna Doone', 'R. D. Blackmore');
+insert into tmp_authors_books(book, author) values ('Girls Out Late', 'Jacqueline Wilson');
+insert into tmp_authors_books(book, author) values ('The Far Pavilions', 'M. M. Kaye');
+insert into tmp_authors_books(book, author) values ('The Witches', 'Roald Dahl');
+insert into tmp_authors_books(book, author) values ('Charlotte''s Web', 'E. B. White');
+insert into tmp_authors_books(book, author) values ('Frankenstein', 'Mary Shelley');
+insert into tmp_authors_books(book, author) values ('They Used to Play on Grass', 'Terry Venables and Gordon Williams');
+insert into tmp_authors_books(book, author) values ('The Old Man and the Sea', 'Ernest Hemingway');
+insert into tmp_authors_books(book, author) values ('The Name of the Rose', 'Umberto Eco');
+insert into tmp_authors_books(book, author) values ('Sophie''s World', 'Jostein Gaarder');
+insert into tmp_authors_books(book, author) values ('Dustbin Baby', 'Jacqueline Wilson');
+insert into tmp_authors_books(book, author) values ('Fantastic Mr. Fox', 'Roald Dahl');
+insert into tmp_authors_books(book, author) values ('Lolita', 'Vladimir Nabokov');
+insert into tmp_authors_books(book, author) values ('Jonathan Livingston Seagull', 'Richard Bach');
+insert into tmp_authors_books(book, author) values ('The Little Prince', 'Antoine de Saint-Exupéry');
+insert into tmp_authors_books(book, author) values ('The Suitcase Kid', 'Jacqueline Wilson');
+insert into tmp_authors_books(book, author) values ('Oliver Twist', 'Charles Dickens');
+insert into tmp_authors_books(book, author) values ('The Power of One', 'Bryce Courtenay');
+insert into tmp_authors_books(book, author) values ('Silas Marner', 'George Eliot');
+insert into tmp_authors_books(book, author) values ('American Psycho', 'Bret Easton Ellis');
+insert into tmp_authors_books(book, author) values ('Diary of a Nobody', 'George and Weedon Grossmith');
+insert into tmp_authors_books(book, author) values ('Trainspotting', 'Irvine Welsh');
+insert into tmp_authors_books(book, author) values ('Goosebumps', 'R. L. Stine');
+insert into tmp_authors_books(book, author) values ('Heidi', 'Johanna Spyri');
+insert into tmp_authors_books(book, author) values ('Sons and Lovers', 'D. H. Lawrence');
+insert into tmp_authors_books(book, author) values ('The Unbearable Lightness of Being', 'Milan Kundera');
+insert into tmp_authors_books(book, author) values ('Man and Boy', 'Tony Parsons');
+insert into tmp_authors_books(book, author) values ('The Truth', 'Terry Pratchett');
+insert into tmp_authors_books(book, author) values ('The War of the Worlds', 'H. G. Wells');
+insert into tmp_authors_books(book, author) values ('The Horse Whisperer', 'Nicholas Evans');
+insert into tmp_authors_books(book, author) values ('A Fine Balance', 'Rohinton Mistry');
+insert into tmp_authors_books(book, author) values ('Witches Abroad', 'Terry Pratchett');
+insert into tmp_authors_books(book, author) values ('The Once and Future King', 'T. H. White');
+insert into tmp_authors_books(book, author) values ('The Very Hungry Caterpillar', 'Eric Carle');
+insert into tmp_authors_books(book, author) values ('Flowers in the Attic', 'V. C. Andrews');
 
 insert into authors(name) select distinct author from tmp_authors_books;
 
 insert into books(name) select distinct book from tmp_authors_books;
 
-insert into relation select a.author_id, b.book_id from tmp_authors_books tmp join authors a on tmp.author = a.name join books b on tmp.book = b.name;
+insert into relation select b.book_id, a.author_id,  from tmp_authors_books tmp join authors a on tmp.author = a.name join books b on tmp.book = b.name;
 
 drop table tmp_authors_books;

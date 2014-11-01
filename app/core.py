@@ -33,8 +33,8 @@ def query_to_db(query, argument, one):
         result = engine.execute(query+argument)
     return result
 
-def get_info(search_request):
-    return query_to_db("select a.author_id, a.name a_name, b.name b_name "
+def get_info(search_request, sel):
+    return query_to_db("select " + sel +
                 "from relation r "
                 "join authors a "
                 " on r.author_id = a.author_id "
@@ -98,18 +98,19 @@ def search():
     result = None
 
     if  request.method == 'POST' and request.form["btn"] == "Authors":
-        search_request = "a.name like '%" + search_string + "%'"
-        q = get_info(search_request)
+        sel = " distinct a.name a_name "
+        search_request = "a_name like '%" + search_string + "%' order by a.name"
+        q = get_info(search_request, sel)
         s = []
         for l in q:
             s.append(l["a_name"])
         result = s
 
     if  request.method == 'POST' and request.form["btn"] == "Books":
-        search_request = "b.name like '%" + search_string + "%'"
-        q = get_info(search_request)
+        sel = " distinct a.author_id, a.name a_name, b.name b_name "
+        search_request = "b_name like '%" + search_string + "%' order by b.name"
+        q = get_info(search_request, sel)
         s = []
-
         for l in q:
             s.append([l["b_name"], l["a_name"]])
         result = s
