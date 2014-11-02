@@ -6,14 +6,14 @@
             {{ error }}
         </ul>
         {% endif %}
-        <h1>Добавить книгу/автора:</h1>
+        <h1>Add book/author:</h1>
 
 
 
             <table>
                 <form method="POST" action="/edit">
                     <tr>
-                        <TD>Добавить автора:</TD><TD>{{form.add_author(size = 38)}}</TD><TD></TD>
+                        <TD>Add author:</TD><TD>{{form.add_author(size = 38)}}</TD><TD></TD>
                     </tr>
                     <tr>
                        <TD> </TD><td><input type="submit"  name = 'btn' value="Add author"></td>
@@ -23,10 +23,10 @@
 
                 <form method="POST" action="/edit">
                     <tr>
-                        <TD>Добавить книгу:</TD><TD>{{form.add_book(size = 38)}}</TD><TD></TD>
+                        <TD>Add book:</TD><TD>{{form.add_book(size = 38)}}</TD><TD></TD>
                     </tr>
                     <tr>
-                        <TD> Выбрать автора:</TD><TD>{{form.authors}}</TD><TD></TD>
+                        <TD>Select author:</TD><TD>{{form.authors}}</TD><TD></TD>
                     </tr>
                      <tr>
                        <TD> </TD><td><input type="submit"  name = 'btn' value="Add book"></td>
@@ -35,11 +35,11 @@
             </table>
 
 
-            <h1>Удалить книгу/автора:</h1>
+            <h1>Delete book/author:</h1>
           <table>
                 <form method="POST" action="/edit">
                     <tr>
-                        <TD>Удалить автора:</TD><TD>{{form.del_author}}</TD><TD></TD>
+                        <TD>Delete author:</TD><TD>{{form.del_author}}</TD><TD></TD>
                     </tr>
                     <tr>
                        <TD> </TD><td><input type="submit"  name = 'btn' value="Del author"></td>
@@ -48,7 +48,7 @@
 
                 <form method="POST" action="/edit">
                     <tr>
-                        <TD>Удалить книгу:</TD><TD>{{form.del_book}}</TD><TD></TD>
+                        <TD>Delete book:</TD><TD>{{form.del_book}}</TD><TD></TD>
                     </tr>
                      <tr>
                        <TD> </TD><td><input type="submit"  name = 'btn' value="Del book"></td>
