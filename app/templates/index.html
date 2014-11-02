@@ -2,9 +2,9 @@
 {% block content %}
 {% if g.user == None %}
 <h2>Pay Attention!</h2>
-Hi, if you want to edit library you have to click  <b><a href="/login">Sign in</a> and write Login: Admin Password: Admin.</b>
+Hi! If you want to edit library you have to click  <b><a href="/login">Sign in</a> and write Login: Admin, Password: Admin.</b>
     <br>
-But, if you want to see what we have just <b>click to search!</b>
+But if you want to see what we have - just <b>search!</b>
 {% else %}
 Hi, {{g.user['login']}}
 {% endif %}
