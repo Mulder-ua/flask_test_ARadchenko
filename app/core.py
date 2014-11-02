@@ -3,9 +3,9 @@ from app import app
 from flask.ext.wtf import Form
 from wtforms import StringField, PasswordField, SelectField
 from wtforms.validators import DataRequired
-from sqlalchemy import create_engine, MetaData
+from sqlalchemy import create_engine
 import os
-import re
+
 
 db = os.path.abspath("app\\db\\library_database.db")
 
@@ -28,32 +28,27 @@ class EditForm(MainForms):
     add_book = StringField('add_book')
 
 
+# Функция для заросов
 def query_to_db(query, argument, one):
     """query - тело запроса,
        argument - фильтры,
        one - True - вернуть 1 строку, False - вернуть все"""
-    result = ""
     engine = create_engine('sqlite:///'+db, convert_unicode=True)
-    metadata = MetaData(bind=engine)
     if one:
         result = engine.execute(query, argument).first()
     else:
         result = engine.execute(query+argument)
     return result
 
+
+# Функция для модификации БД
 def modify_db(query, argument):
     engine = create_engine('sqlite:///'+db, convert_unicode=True)
-    metadata = MetaData(bind=engine)
     engine.execute(query, argument)
 
+
 def get_info(search_request, sel):
-    return query_to_db(
-                "select " +
-                sel +
-                "from relation r "
-                "join authors a "
-                " on r.author_id = a.author_id "
-                "join books b "
+    return query_to_db("select " + sel + "from relation r join authors a on r.author_id = a.author_id join books b " +
                 " on r.book_id = b.book_id "
                 "where ",
                 search_request,
@@ -61,16 +56,16 @@ def get_info(search_request, sel):
                 )
 
 
-@app.route('/', methods = ['GET', 'POST'])
-@app.route('/index', methods = ['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
+@app.route('/index', methods=['GET', 'POST'])
 def index():
     title = "Home"
     form = MainForms()
     if request.method == 'POST' and request.form["btn"] == "Search":
         return redirect('/search')
     return render_template("index.html",
-                           title = title,
-                           form = form
+                           title=title,
+                           form=form
                            )
 
 
@@ -79,10 +74,11 @@ def before_request():
     g.user = None
     if 'login' in session:
         g.user = query_to_db('select * from users where login = :1',
-        [session['login']], one=True)
+        [session['login']],
+        one=True)
 
 
-@app.route('/login', methods = ['GET', 'POST'])
+@app.route('/login', methods=['GET', 'POST'])
 def login():
     title = "Login"
     if g.user is not None:
@@ -102,16 +98,14 @@ def login():
 
     elif request.method == 'POST' and request.form["btn"] == "Search":
         return redirect('/search')
-
-
     return render_template("login.html",
-                           title = title,
-                           form = form,
-                           error = error
+                           title=title,
+                           form=form,
+                           error=error
                            )
 
 
-@app.route('/search', methods = ['GET', 'POST'])
+@app.route('/search', methods=['GET', 'POST'])
 def search():
     title = "Search result"
     form = MainForms()
@@ -121,7 +115,7 @@ def search():
 
     if request.method == 'POST' and request.form["btn"] == "Authors":
         search_request = " where a_name like '%" + search_string + "%' order by name"
-        q = query_to_db("select author_id, name a_name from authors",search_request, False)
+        q = query_to_db("select author_id, name a_name from authors", search_request, False)
         s = []
         for l in q:
             s.append(l["a_name"])
@@ -136,23 +130,21 @@ def search():
             s.append([l["b_name"], l["a_name"]])
         result = s
     return render_template("search.html",
-                           title = title,
-                           form = form,
-                           result = result,
-                           btn = request.form["btn"],
-                           request = search_string
-    )
+                           title=title,
+                           form=form,
+                           result=result,
+                           btn=request.form["btn"],
+                           request=search_string)
 
 
-@app.route('/logout', methods = ['GET', 'POST'])
+@app.route('/logout', methods=['GET', 'POST'])
 def logout():
     flash('You were logged in')
     session.pop('login')
     return redirect('/index')
-    return render_template("index.html")
 
 
-@app.route('/edit', methods = ['GET', 'POST'])
+@app.route('/edit', methods=['GET', 'POST'])
 def edit():
     title = "Edit you library"
     error = None
@@ -163,13 +155,13 @@ def edit():
         return redirect('/login')
     form = EditForm()
 
-    q = query_to_db("select author_id, name a_name from authors order by name","", False)
+    q = query_to_db("select author_id, name a_name from authors order by name", "", False)
 
     authors += [(s["author_id"], s["a_name"]) for s in q]
-    form.authors.choices    = authors
+    form.authors.choices = authors
     form.del_author.choices = authors
 
-    q = query_to_db("select book_id, name b_name from books order by name","", False)
+    q = query_to_db("select book_id, name b_name from books order by name", "", False)
 
     books += [(s["book_id"], s["b_name"]) for s in q]
     form.del_book.choices = books
@@ -196,7 +188,8 @@ def edit():
             error = "Book already exist in database!"
         else:
             modify_db("insert into books(name)values(:1)", book_for_add)
-            modify_db("insert into relation values((select book_id from books where name = :1), (:2))", (book_for_add, request.form["authors"]))
+            modify_db("insert into relation values((select book_id from books where name = :1), (:2))",
+                      (book_for_add, request.form["authors"]))
             flash('Book "' + request.form['add_book'] + '" was added')
             return redirect('/edit')
 
@@ -210,7 +203,8 @@ def edit():
         else:
 
             name = query_to_db("select name from authors where author_id = :1", author_for_del, True)["name"]
-            modify_db("delete from books where book_id in (select book_id from relation where author_id = :1)", author_for_del)
+            modify_db("delete from books where book_id in (select book_id from relation where author_id = :1)",
+                      author_for_del)
             modify_db("delete from relation where author_id = :1", author_for_del)
             modify_db("delete from authors where author_id = :1", author_for_del)
             flash('Author "' + name + '" and all related books were deleted')
@@ -233,6 +227,6 @@ def edit():
             return redirect("/edit")
 
     return render_template("edit.html",
-                           title = title,
-                           form = form,
-                           error = error)
+                           title=title,
+                           form=form,
+                           error=error)
