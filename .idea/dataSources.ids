@@ -6,12 +6,12 @@
     <schema name="" catalog=""/>
     <table name="authors" schema="" catalog="" type="TABLE">
       <column name="author_id" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
-      <column name="name" sqlType="VARCHAR(25)" precision="2000000000" scale="10" nullable="false" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR(70)" precision="2000000000" scale="10" nullable="false" jdbcType="12"/>
       <primary-key columns="author_id"/>
     </table>
     <table name="books" schema="" catalog="" type="TABLE">
       <column name="book_id" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
-      <column name="name" sqlType="VARCHAR(25)" precision="2000000000" scale="10" nullable="false" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR(70)" precision="2000000000" scale="10" nullable="false" jdbcType="12"/>
       <primary-key columns="book_id"/>
     </table>
     <table name="relation" schema="" catalog="" type="TABLE">

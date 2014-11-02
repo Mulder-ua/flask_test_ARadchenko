@@ -8,14 +8,14 @@ password_hash varchar(25) not null
 drop table if exists authors;
 create table authors (
 author_id integer primary key autoincrement,
-name         varchar(25) not null
+name         varchar(70) not null unique
 );
 
 
 drop table if exists books;
 create table books (
 book_id integer primary key autoincrement,
-name         varchar(25) not null
+name         varchar(70) not null unique
 );
 
 
@@ -241,6 +241,6 @@ insert into authors(name) select distinct author from tmp_authors_books;
 
 insert into books(name) select distinct book from tmp_authors_books;
 
-insert into relation select b.book_id, a.author_id,  from tmp_authors_books tmp join authors a on tmp.author = a.name join books b on tmp.book = b.name;
+insert into relation select b.book_id, a.author_id  from tmp_authors_books tmp join authors a on tmp.author = a.name join books b on tmp.book = b.name;
 
 drop table tmp_authors_books;

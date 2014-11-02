@@ -21,9 +21,9 @@ class LoginForm(MainForms):
 
 
 class EditForm(MainForms):
-    authors = SelectField("Choose...", choices=[(None, "Choose...")])
-    del_author = SelectField("Choose...", choices=[(None, "Choose...")])
-    del_book = SelectField("Choose...", choices=[(None, "Choose...")])
+    authors = SelectField("Choose...", [(None, "Choose...")])
+    del_author = SelectField("Choose...", [(None, "Choose...")])
+    del_book = SelectField("Choose...", [(None, "Choose...")])
     add_author = StringField('add_author')
     add_book = StringField('add_book')
 
@@ -41,22 +41,22 @@ def query_to_db(query, argument, one):
         result = engine.execute(query+argument)
     return result
 
-def modifire_db(query, argument):
+def modify_db(query, argument):
     engine = create_engine('sqlite:///'+db, convert_unicode=True)
     metadata = MetaData(bind=engine)
     engine.execute(query, argument)
 
 def get_info(search_request, sel):
     return query_to_db(
-                "select " + 
+                "select " +
                 sel +
                 "from relation r "
                 "join authors a "
                 " on r.author_id = a.author_id "
                 "join books b "
                 " on r.book_id = b.book_id "
-                "where ", 
-                search_request, 
+                "where ",
+                search_request,
                 one=False
                 )
 
@@ -86,12 +86,10 @@ def before_request():
 def login():
     title = "Login"
     if g.user is not None:
-      return redirect('/search')
-    user_l = {"login":"Admin",
-              "password_hash":"Admin"}
+        return redirect('/search')
     form = LoginForm()
     error = None
-    if  request.method == 'POST' and request.form["btn"] == "Login":
+    if request.method == 'POST' and request.form["btn"] == "Login":
         user = query_to_db('select * from users where login = :1', request.form['login'], one=True)
         if user is None:
             error = "Invalid login"
@@ -101,7 +99,6 @@ def login():
             flash('You were logged in')
             session['login'] = user['login']
             return redirect('/index')
-
 
     elif request.method == 'POST' and request.form["btn"] == "Search":
         return redirect('/search')
@@ -122,7 +119,7 @@ def search():
     search_string = request.form['search']
     result = None
 
-    if  request.method == 'POST' and request.form["btn"] == "Authors":
+    if request.method == 'POST' and request.form["btn"] == "Authors":
         search_request = " where a_name like '%" + search_string + "%' order by name"
         q = query_to_db("select author_id, name a_name from authors",search_request, False)
         s = []
@@ -130,7 +127,7 @@ def search():
             s.append(l["a_name"])
         result = s
 
-    if  request.method == 'POST' and request.form["btn"] == "Books":
+    if request.method == 'POST' and request.form["btn"] == "Books":
         sel = " distinct a.author_id, a.name a_name, b.name b_name "
         search_request = "b_name like '%" + search_string + "%' order by b.name"
         q = get_info(search_request, sel)
@@ -159,40 +156,81 @@ def logout():
 def edit():
     title = "Edit you library"
     error = None
-    authors = []
-    books   = []
+    authors = [(None, "Choose...")]
+    books = [(None, "Choose...")]
     if g.user is None:
         flash("You have to authorized.")
         return redirect('/login')
     form = EditForm()
-    q = query_to_db("select author_id, name a_name from authors","", False)
-    authors += [(s["author_id"], s["a_name"]) for s in q]
-    form.authors.choices    += authors
-    form.del_author.choices += authors
 
-    q = query_to_db("select book_id, name b_name from books","", False)
+    q = query_to_db("select author_id, name a_name from authors order by name","", False)
+
+    authors += [(s["author_id"], s["a_name"]) for s in q]
+    form.authors.choices    = authors
+    form.del_author.choices = authors
+
+    q = query_to_db("select book_id, name b_name from books order by name","", False)
 
     books += [(s["book_id"], s["b_name"]) for s in q]
-    form.del_book.choices += books
+    form.del_book.choices = books
 
-    if  request.method == 'POST' and request.form["btn"] == "Add author":
+    if request.method == 'POST' and request.form["btn"] == "Add author":
         author_for_add = request.form['add_author']
-
-        check_author = query_to_db('select * from authors where name = :1', request.form['add_author'], one=True)
-        if check_author is not None:
+        if len(author_for_add) < 2 or len(author_for_add) > 70:
+            error = "Name has to be bigger then 1 and less then 70!"
+        elif query_to_db('select * from authors where name = :1', author_for_add, one=True) is not None:
             error = "Author already exist in database!"
         else:
-            modifire_db("insert into authors(name)values(:1)", request.form['add_author'])
-            flash(request.form['add_author'] + " was added")
+            modify_db("insert into authors(name)values(:1)", author_for_add)
+            flash('Author "' + request.form['add_author'] + '" was added')
+            return redirect('/edit')
 
-    if  request.method == 'POST' and request.form["btn"] == "Add book":
-        error = request.form["authors"]
+    if request.method == 'POST' and request.form["btn"] == "Add book":
+        book_for_add = request.form['add_book']
 
-    if  request.method == 'POST' and request.form["btn"] == "Del author":
-        error = request.form["del_author"]
+        if request.form["authors"] == "None":
+            error = "You have to choose author!"
+        elif len(book_for_add) < 2 or len(book_for_add) > 70:
+            error = "Name has to be bigger then 1 and less then 70!"
+        elif query_to_db('select * from books where name = :1', book_for_add, one=True) is not None:
+            error = "Book already exist in database!"
+        else:
+            modify_db("insert into books(name)values(:1)", book_for_add)
+            modify_db("insert into relation values((select book_id from books where name = :1), (:2))", (book_for_add, request.form["authors"]))
+            flash('Book "' + request.form['add_book'] + '" was added')
+            return redirect('/edit')
 
-    if  request.method == 'POST' and request.form["btn"] == "Del book":
-        error = request.form["del_book"]
+    if request.method == 'POST' and request.form["btn"] == "Del author":
+        author_for_del = request.form["del_author"]
+        if request.form["del_author"] == "None":
+            error = "You have to choose author!"
+        elif query_to_db('select * from authors where author_id = :1', author_for_del, one=True) is None:
+            flash("Author not exist in database!")
+            return redirect("/edit")
+        else:
+
+            name = query_to_db("select name from authors where author_id = :1", author_for_del, True)["name"]
+            modify_db("delete from books where book_id in (select book_id from relation where author_id = :1)", author_for_del)
+            modify_db("delete from relation where author_id = :1", author_for_del)
+            modify_db("delete from authors where author_id = :1", author_for_del)
+            flash('Author "' + name + '" and all related books were deleted')
+            return redirect("/edit")
+
+    if request.method == 'POST' and request.form["btn"] == "Del book":
+        book_for_del = request.form["del_book"]
+        if request.form["del_book"] == "None":
+            error = "You have to choose author!"
+        elif query_to_db('select * from books where book_id = :1', book_for_del, one=True) is None:
+            flash("Author not exist in database!")
+            return redirect("/edit")
+        else:
+
+            name = query_to_db("select name from books where book_id = :1", book_for_del, True)["name"]
+
+            modify_db("delete from relation where book_id = :1", book_for_del)
+            modify_db("delete from books where book_id = :1", book_for_del)
+            flash('Book "' + name + '" was deleted')
+            return redirect("/edit")
 
     return render_template("edit.html",
                            title = title,
