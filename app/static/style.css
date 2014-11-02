@@ -8,6 +8,9 @@ body {
 	min-height:500px;
 }
 
+ul {
+    color: #E05475;
+}
 
 
 .top_bar a, span {	

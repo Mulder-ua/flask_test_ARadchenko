@@ -12,8 +12,8 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/flask_test_ARadchenko$run.coverage" NAME="run Coverage Results" MODIFIED="1414875869629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/flask_test_ARadchenko$core.coverage" NAME="core Coverage Results" MODIFIED="1414762054426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/flask_test_ARadchenko$run.coverage" NAME="run Coverage Results" MODIFIED="1414912140801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_test_ARadchenko$core.coverage" NAME="core Coverage Results" MODIFIED="1414909250153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
     <SUITE FILE_PATH="coverage/flask_test_ARadchenko$tmp.coverage" NAME="tmp Coverage Results" MODIFIED="1414751034949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -31,23 +31,28 @@
       <file leaf-file-name="core.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/core.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7" vertical-offset="816" max-vertical-offset="2907">
-              <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2760" max-vertical-offset="3485">
+              <caret line="181" column="36" selection-start-line="181" selection-start-column="36" selection-end-line="181" selection-end-column="36" />
               <folding>
                 <element signature="e#0#71#0" expanded="true" />
-                <marker date="1414876780394" expanded="true" signature="1319:1553" placeholder="select from relation..." />
-                <marker date="1414876780394" expanded="true" signature="2106:2142" placeholder="select * fro..users..." />
-                <marker date="1414876780394" expanded="true" signature="2533:2569" placeholder="select * fro..users..." />
+                <marker date="1414912292149" expanded="true" signature="2450:2486" placeholder="select * fro..users..." />
+                <marker date="1414912292149" expanded="true" signature="2877:2913" placeholder="select * fro..users..." />
+                <marker date="1414912292149" expanded="true" signature="3918:3960" placeholder="select autho..authors..." />
+                <marker date="1414912292149" expanded="true" signature="5194:5236" placeholder="select autho..authors..." />
+                <marker date="1414912292149" expanded="true" signature="5407:5445" placeholder="select book_..books..." />
+                <marker date="1414912292149" expanded="true" signature="5712:5749" placeholder="select * fro..authors..." />
+                <marker date="1414912292149" expanded="true" signature="5922:5954" placeholder="insert into ..." />
+                <marker date="1414912292149" expanded="true" signature="5922:5957" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="edit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25" vertical-offset="0" max-vertical-offset="935">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="1105">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -76,8 +81,8 @@
       <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="1292">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            <state vertical-scroll-proportion="-11.769231" vertical-offset="561" max-vertical-offset="1292">
+              <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -86,8 +91,8 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/static/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1547">
-              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1598">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,10 +101,33 @@
       <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="459">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="459">
+              <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQLite -" pinned="false" current="true" current-in-tab="true">
+        <entry file="dbDummy://db-console:/6ff66282/a0a1d7e1-ebdf-46da-9841-7c25cc0d5312/">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.18444847" vertical-offset="0" max-vertical-offset="4403">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_database.sql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/create_database.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.4" vertical-offset="3397" max-vertical-offset="4284">
+              <caret line="201" column="74" selection-start-line="0" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
@@ -126,16 +154,16 @@
         <option value="$PROJECT_DIR$/app/static/apprise-v2.js" />
         <option value="$PROJECT_DIR$/tmp.py" />
         <option value="$PROJECT_DIR$/app/static/edit.html" />
-        <option value="$PROJECT_DIR$/app/templates/login.html" />
-        <option value="$PROJECT_DIR$/app/static/style.css" />
         <option value="$PROJECT_DIR$/app/templates/search.html" />
         <option value="$PROJECT_DIR$/select.sql" />
         <option value="dbtable:/6ff66282/a0a1d7e1-ebdf-46da-9841-7c25cc0d5312/..authors" />
         <option value="$PROJECT_DIR$/create_database.sql" />
-        <option value="db-console:/6ff66282/a0a1d7e1-ebdf-46da-9841-7c25cc0d5312/" />
-        <option value="$PROJECT_DIR$/app/templates/base.html" />
         <option value="$PROJECT_DIR$/app/core.py" />
+        <option value="$PROJECT_DIR$/app/templates/base.html" />
+        <option value="$PROJECT_DIR$/app/static/style.css" />
         <option value="$PROJECT_DIR$/app/templates/edit.html" />
+        <option value="$PROJECT_DIR$/app/templates/login.html" />
+        <option value="db-console:/6ff66282/a0a1d7e1-ebdf-46da-9841-7c25cc0d5312/" />
       </list>
     </option>
   </component>
@@ -429,6 +457,9 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -450,9 +481,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -545,28 +573,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1034" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1034" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3281768" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25559106" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25825346" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33997786" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3392265" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -622,14 +650,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/create_database.sql">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="4267">
           <caret line="9" column="9" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="9" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/base.html">
@@ -654,9 +682,14 @@
           <caret line="88" column="19" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="19" />
           <folding>
             <element signature="e#0#71#0" expanded="true" />
-            <marker date="1414876780394" expanded="true" signature="1319:1553" placeholder="select from relation..." />
-            <marker date="1414876780394" expanded="true" signature="2106:2142" placeholder="select * fro..users..." />
-            <marker date="1414876780394" expanded="true" signature="2533:2569" placeholder="select * fro..users..." />
+            <marker date="1414912292149" expanded="true" signature="2450:2486" placeholder="select * fro..users..." />
+            <marker date="1414912292149" expanded="true" signature="2877:2913" placeholder="select * fro..users..." />
+            <marker date="1414912292149" expanded="true" signature="3918:3960" placeholder="select autho..authors..." />
+            <marker date="1414912292149" expanded="true" signature="5194:5236" placeholder="select autho..authors..." />
+            <marker date="1414912292149" expanded="true" signature="5407:5445" placeholder="select book_..books..." />
+            <marker date="1414912292149" expanded="true" signature="5712:5749" placeholder="select * fro..authors..." />
+            <marker date="1414912292149" expanded="true" signature="5922:5954" placeholder="insert into ..." />
+            <marker date="1414912292149" expanded="true" signature="5922:5957" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
@@ -737,9 +770,14 @@
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="e#0#71#0" expanded="true" />
-            <marker date="1414876780394" expanded="true" signature="1319:1553" placeholder="select from relation..." />
-            <marker date="1414876780394" expanded="true" signature="2106:2142" placeholder="select * fro..users..." />
-            <marker date="1414876780394" expanded="true" signature="2533:2569" placeholder="select * fro..users..." />
+            <marker date="1414912292149" expanded="true" signature="2450:2486" placeholder="select * fro..users..." />
+            <marker date="1414912292149" expanded="true" signature="2877:2913" placeholder="select * fro..users..." />
+            <marker date="1414912292149" expanded="true" signature="3918:3960" placeholder="select autho..authors..." />
+            <marker date="1414912292149" expanded="true" signature="5194:5236" placeholder="select autho..authors..." />
+            <marker date="1414912292149" expanded="true" signature="5407:5445" placeholder="select book_..books..." />
+            <marker date="1414912292149" expanded="true" signature="5712:5749" placeholder="select * fro..authors..." />
+            <marker date="1414912292149" expanded="true" signature="5922:5954" placeholder="insert into ..." />
+            <marker date="1414912292149" expanded="true" signature="5922:5957" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
@@ -787,9 +825,14 @@
           <caret line="35" column="28" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="28" />
           <folding>
             <element signature="e#0#71#0" expanded="true" />
-            <marker date="1414876780394" expanded="true" signature="1319:1553" placeholder="select from relation..." />
-            <marker date="1414876780394" expanded="true" signature="2106:2142" placeholder="select * fro..users..." />
-            <marker date="1414876780394" expanded="true" signature="2533:2569" placeholder="select * fro..users..." />
+            <marker date="1414912292149" expanded="true" signature="2450:2486" placeholder="select * fro..users..." />
+            <marker date="1414912292149" expanded="true" signature="2877:2913" placeholder="select * fro..users..." />
+            <marker date="1414912292149" expanded="true" signature="3918:3960" placeholder="select autho..authors..." />
+            <marker date="1414912292149" expanded="true" signature="5194:5236" placeholder="select autho..authors..." />
+            <marker date="1414912292149" expanded="true" signature="5407:5445" placeholder="select book_..books..." />
+            <marker date="1414912292149" expanded="true" signature="5712:5749" placeholder="select * fro..authors..." />
+            <marker date="1414912292149" expanded="true" signature="5922:5954" placeholder="insert into ..." />
+            <marker date="1414912292149" expanded="true" signature="5922:5957" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
@@ -837,9 +880,14 @@
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="e#0#71#0" expanded="true" />
-            <marker date="1414876780394" expanded="true" signature="1319:1553" placeholder="select from relation..." />
-            <marker date="1414876780394" expanded="true" signature="2106:2142" placeholder="select * fro..users..." />
-            <marker date="1414876780394" expanded="true" signature="2533:2569" placeholder="select * fro..users..." />
+            <marker date="1414912292149" expanded="true" signature="2450:2486" placeholder="select * fro..users..." />
+            <marker date="1414912292149" expanded="true" signature="2877:2913" placeholder="select * fro..users..." />
+            <marker date="1414912292149" expanded="true" signature="3918:3960" placeholder="select autho..authors..." />
+            <marker date="1414912292149" expanded="true" signature="5194:5236" placeholder="select autho..authors..." />
+            <marker date="1414912292149" expanded="true" signature="5407:5445" placeholder="select book_..books..." />
+            <marker date="1414912292149" expanded="true" signature="5712:5749" placeholder="select * fro..authors..." />
+            <marker date="1414912292149" expanded="true" signature="5922:5954" placeholder="insert into ..." />
+            <marker date="1414912292149" expanded="true" signature="5922:5957" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
@@ -906,9 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.67413795" vertical-offset="0" max-vertical-offset="612">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <marker date="1414751011538" expanded="true" signature="-1:-1" placeholder="select a.aut..relation..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -923,6 +968,7 @@
           <settings layout="Hierarchic Group" zoom="1.0" x="720.0" y="283.0" />
           <SelectedNodes />
           <Categories />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -930,37 +976,16 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
         <state />
       </provider>
     </entry>
-    <entry file="dbDummy://db-console:/6ff66282/a0a1d7e1-ebdf-46da-9841-7c25cc0d5312/">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.401089" vertical-offset="3427" max-vertical-offset="4386">
-          <caret line="247" column="0" selection-start-line="247" selection-start-column="0" selection-end-line="252" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/select.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17586207" vertical-offset="0" max-vertical-offset="4267">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_database.sql">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03773585" vertical-offset="3397" max-vertical-offset="4284">
-          <caret line="201" column="74" selection-start-line="201" selection-start-column="74" selection-end-line="201" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -974,16 +999,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/static/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1547">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="459">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1598">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -998,29 +1015,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="1292">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        <state vertical-scroll-proportion="-11.769231" vertical-offset="561" max-vertical-offset="1292">
+          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="459">
+          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="1105">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/core.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7" vertical-offset="816" max-vertical-offset="2907">
-          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2760" max-vertical-offset="3485">
+          <caret line="181" column="36" selection-start-line="181" selection-start-column="36" selection-end-line="181" selection-end-column="36" />
           <folding>
             <element signature="e#0#71#0" expanded="true" />
-            <marker date="1414876780394" expanded="true" signature="1319:1553" placeholder="select from relation..." />
-            <marker date="1414876780394" expanded="true" signature="2106:2142" placeholder="select * fro..users..." />
-            <marker date="1414876780394" expanded="true" signature="2533:2569" placeholder="select * fro..users..." />
+            <marker date="1414912292149" expanded="true" signature="2450:2486" placeholder="select * fro..users..." />
+            <marker date="1414912292149" expanded="true" signature="2877:2913" placeholder="select * fro..users..." />
+            <marker date="1414912292149" expanded="true" signature="3918:3960" placeholder="select autho..authors..." />
+            <marker date="1414912292149" expanded="true" signature="5194:5236" placeholder="select autho..authors..." />
+            <marker date="1414912292149" expanded="true" signature="5407:5445" placeholder="select book_..books..." />
+            <marker date="1414912292149" expanded="true" signature="5712:5749" placeholder="select * fro..authors..." />
+            <marker date="1414912292149" expanded="true" signature="5922:5954" placeholder="insert into ..." />
+            <marker date="1414912292149" expanded="true" signature="5922:5957" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/edit.html">
+    <entry file="file://$PROJECT_DIR$/create_database.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25" vertical-offset="0" max-vertical-offset="935">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        <state vertical-scroll-proportion="-0.4" vertical-offset="3397" max-vertical-offset="4284">
+          <caret line="201" column="74" selection-start-line="0" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="dbDummy://db-console:/6ff66282/a0a1d7e1-ebdf-46da-9841-7c25cc0d5312/">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18444847" vertical-offset="0" max-vertical-offset="4403">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
           <folding />
         </state>
       </provider>
